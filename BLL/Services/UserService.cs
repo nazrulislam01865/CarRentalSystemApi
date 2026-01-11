@@ -34,5 +34,16 @@ namespace BLL.Services
             User data = MapperConfig.GetMapper().Map<User>(dto);
             return factory.UserData().Create(data);
         }
+        public bool Update(UserDTO u)
+        {
+            User data = MapperConfig.GetMapper().Map<User>(u);
+            return factory.UserData().Update(data);
+
+        }
+        
+        public bool Delete(int id) {
+            return factory.UserData().Delete(id);
+        
+        }
     }
 }

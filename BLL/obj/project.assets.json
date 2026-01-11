@@ -2853,11 +2853,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\C#\\CarRentalSystem\\BLL\\BLL.csproj",
+      "projectUniqueName": "H:\\Git\\CarRentalSystemApi\\BLL\\BLL.csproj",
       "projectName": "BLL",
-      "projectPath": "H:\\C#\\CarRentalSystem\\BLL\\BLL.csproj",
+      "projectPath": "H:\\Git\\CarRentalSystemApi\\BLL\\BLL.csproj",
       "packagesPath": "C:\\Users\\nazru\\.nuget\\packages\\",
-      "outputPath": "H:\\C#\\CarRentalSystem\\BLL\\obj\\",
+      "outputPath": "H:\\Git\\CarRentalSystemApi\\BLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2878,8 +2878,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "H:\\C#\\CarRentalSystem\\DAL\\DAL.csproj": {
-              "projectPath": "H:\\C#\\CarRentalSystem\\DAL\\DAL.csproj"
+            "H:\\Git\\CarRentalSystemApi\\DAL\\DAL.csproj": {
+              "projectPath": "H:\\Git\\CarRentalSystemApi\\DAL\\DAL.csproj"
             }
           }
         }

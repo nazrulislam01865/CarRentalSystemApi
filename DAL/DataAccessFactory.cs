@@ -18,5 +18,9 @@ namespace DAL
         {
             return new UserRepo(db);
         }
+        public IRepository<Car> CarData()
+        {
+            return new CarRepo(db);
+        }
     }
 }

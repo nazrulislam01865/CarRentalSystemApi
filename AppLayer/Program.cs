@@ -13,9 +13,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<UserService>();
-//builder.Services.AddScoped<DepartmentRepo>();
 builder.Services.AddScoped<DataAccessFactory>();
 builder.Services.AddScoped<UserRepo>();
+builder.Services.AddScoped<CarRepo>();
+builder.Services.AddScoped<CarService>();
 builder.Services.AddDbContext<UMSContext>(opt => {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DbConn"));
 });

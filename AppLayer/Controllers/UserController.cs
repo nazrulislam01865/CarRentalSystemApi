@@ -33,5 +33,36 @@ namespace AppLayer.Controllers
             var rs = service.Create(d);
             return Ok(rs);
         }
+        [HttpPut("update")]
+        public IActionResult Update(UserDTO d)
+        {
+            if (d == null || d.Id == 0)
+                return BadRequest("Invalid user data.");
+
+            var result = service.Update(d); 
+
+            if (result)
+                return Ok(new { message = "User updated successfully." });
+            else
+                return NotFound(new { message = "User not found." });
+        }
+        [HttpGet("delete/{id}")]
+        public IActionResult Delete(int id)
+        {
+            if(id == 0 || id== null)
+            {
+                return BadRequest("Invalid Id");
+            }
+            var data = service.Delete(id);
+
+            if (data)
+            {
+                return Ok("User removed");
+            }
+            else
+                return NotFound();
+        }
+
+
     }
 }

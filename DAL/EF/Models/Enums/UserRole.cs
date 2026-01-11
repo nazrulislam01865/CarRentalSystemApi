@@ -13,12 +13,7 @@ namespace DAL.EF.Models.Enums
         Staff = 2
     }
 
-    //public enum CarStatus
-    //{
-    //    Available = 0,
-    //    Rented = 1,
-    //    Maintenance = 2
-    //}
+
 
     //public enum BookingStatus
     //{

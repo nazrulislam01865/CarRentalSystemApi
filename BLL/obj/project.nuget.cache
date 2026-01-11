@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6jtqxusExSo=",
+  "dgSpecHash": "HsztMLiUgAg=",
   "success": true,
-  "projectFilePath": "H:\\C#\\CarRentalSystem\\BLL\\BLL.csproj",
+  "projectFilePath": "H:\\Git\\CarRentalSystemApi\\BLL\\BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nazru\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\nazru\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

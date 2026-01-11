@@ -5204,11 +5204,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\C#\\CarRentalSystem\\AppLayer\\AppLayer.csproj",
+      "projectUniqueName": "H:\\Git\\CarRentalSystemApi\\AppLayer\\AppLayer.csproj",
       "projectName": "AppLayer",
-      "projectPath": "H:\\C#\\CarRentalSystem\\AppLayer\\AppLayer.csproj",
+      "projectPath": "H:\\Git\\CarRentalSystemApi\\AppLayer\\AppLayer.csproj",
       "packagesPath": "C:\\Users\\nazru\\.nuget\\packages\\",
-      "outputPath": "H:\\C#\\CarRentalSystem\\AppLayer\\obj\\",
+      "outputPath": "H:\\Git\\CarRentalSystemApi\\AppLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5229,11 +5229,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "H:\\C#\\CarRentalSystem\\BLL\\BLL.csproj": {
-              "projectPath": "H:\\C#\\CarRentalSystem\\BLL\\BLL.csproj"
+            "H:\\Git\\CarRentalSystemApi\\BLL\\BLL.csproj": {
+              "projectPath": "H:\\Git\\CarRentalSystemApi\\BLL\\BLL.csproj"
             },
-            "H:\\C#\\CarRentalSystem\\DAL\\DAL.csproj": {
-              "projectPath": "H:\\C#\\CarRentalSystem\\DAL\\DAL.csproj"
+            "H:\\Git\\CarRentalSystemApi\\DAL\\DAL.csproj": {
+              "projectPath": "H:\\Git\\CarRentalSystemApi\\DAL\\DAL.csproj"
             }
           }
         }
