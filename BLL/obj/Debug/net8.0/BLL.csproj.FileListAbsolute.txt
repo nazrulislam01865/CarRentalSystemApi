@@ -1,0 +1,15 @@
+H:\C#\CarRentalSystem\BLL\bin\Debug\net8.0\BLL.deps.json
+H:\C#\CarRentalSystem\BLL\bin\Debug\net8.0\BLL.dll
+H:\C#\CarRentalSystem\BLL\bin\Debug\net8.0\BLL.pdb
+H:\C#\CarRentalSystem\BLL\obj\Debug\net8.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+H:\C#\CarRentalSystem\BLL\obj\Debug\net8.0\BLL.AssemblyInfoInputs.cache
+H:\C#\CarRentalSystem\BLL\obj\Debug\net8.0\BLL.AssemblyInfo.cs
+H:\C#\CarRentalSystem\BLL\obj\Debug\net8.0\BLL.csproj.CoreCompileInputs.cache
+H:\C#\CarRentalSystem\BLL\obj\Debug\net8.0\BLL.dll
+H:\C#\CarRentalSystem\BLL\obj\Debug\net8.0\refint\BLL.dll
+H:\C#\CarRentalSystem\BLL\obj\Debug\net8.0\BLL.pdb
+H:\C#\CarRentalSystem\BLL\obj\Debug\net8.0\ref\BLL.dll
+H:\C#\CarRentalSystem\BLL\obj\Debug\net8.0\BLL.csproj.AssemblyReference.cache
+H:\C#\CarRentalSystem\BLL\bin\Debug\net8.0\DAL.dll
+H:\C#\CarRentalSystem\BLL\bin\Debug\net8.0\DAL.pdb
+H:\C#\CarRentalSystem\BLL\obj\Debug\net8.0\BLL.csproj.Up2Date
