@@ -9,6 +9,7 @@ namespace BLL
         static MapperConfiguration cfg = new MapperConfiguration(c => {
             c.CreateMap<User, UserDTO>().ReverseMap();
             c.CreateMap<Car, CarDTO>().ReverseMap();
+            c.CreateMap<Booking, BookingDTO>().ReverseMap();
             //c.CreateMap<Department, DepartmentDTO>().ReverseMap();
             //c.CreateMap<Student, StudentDTO>().ReverseMap();
             //c.CreateMap<Department, DepartmentStudentDTO>().ReverseMap();

@@ -18,5 +18,16 @@ namespace DAL.EF.Models.Entities
         public string Color { get; set; }
         public int Mileage { get; set; }
 
+
+        // Pricing (moderate features: booking + payment)
+        public decimal DailyRate { get; set; }
+        public decimal Deposit { get; set; }
+
+        // Availability status ("Rented" can be set when an active booking starts)
+        public CarStatus Status { get; set; } = CarStatus.Available;
+
+        // Navigation
+        public virtual ICollection<Booking> Bookings { get; set; } = new List<Booking>();
+
     }
 }

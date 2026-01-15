@@ -29,10 +29,23 @@ namespace DAL.Repos
         {
             return db.Cars.ToList();
         }
-        public bool Update(Car c)
+        //public bool Update(Car c)
+        //{
+        //    var ex = Get(c.Id);
+        //    db.Entry(ex).CurrentValues.SetValues(c);
+        //    return db.SaveChanges() > 0;
+        //}
+        public bool Update(Car u)
         {
-            var ex = Get(c.Id);
-            db.Entry(ex).CurrentValues.SetValues(c);
+            if (u == null || u.Id <= 0)
+                return false;
+
+            var ex = Get(u.Id);
+            if (ex == null)
+                return false;
+
+            db.Entry(ex).CurrentValues.SetValues(u);
+
             return db.SaveChanges() > 0;
         }
         public bool Delete(int id)

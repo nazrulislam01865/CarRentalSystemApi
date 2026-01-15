@@ -13,6 +13,8 @@ namespace DAL.EF.Models.Entities
         public string Email { get; set; }
         public string Phone { get; set; }
         public string Password { get; set; }
+        public virtual ICollection<Booking> BookingsAsCustomer { get; set; } = new List<Booking>();
+        public virtual ICollection<Booking> BookingsApproved { get; set; } = new List<Booking>();
 
     }
 }

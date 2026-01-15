@@ -22,5 +22,9 @@ namespace DAL
         {
             return new CarRepo(db);
         }
+        public BookingRepo BookingData()
+        {
+            return new BookingRepo(db);
+        }
     }
 }

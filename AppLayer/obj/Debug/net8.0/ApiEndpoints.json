@@ -1,5 +1,47 @@
 [
   {
+    "ContainingType": "AppLayer.Controllers.BookingController",
+    "Method": "Get",
+    "RelativePath": "api/Booking/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLayer.Controllers.BookingController",
+    "Method": "All",
+    "RelativePath": "api/Booking/All",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLayer.Controllers.BookingController",
+    "Method": "Create",
+    "RelativePath": "api/Booking/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BLL.DTOs.BookingDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AppLayer.Controllers.CarController",
     "Method": "Get",
     "RelativePath": "api/Car/{id}",
@@ -140,7 +182,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "d",
+        "Name": "user",
         "Type": "BLL.DTOs.UserDTO",
         "IsRequired": true
       }

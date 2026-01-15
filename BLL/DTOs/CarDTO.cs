@@ -16,6 +16,9 @@ namespace BLL.DTOs
         public int Year { get; set; }
         public string Color { get; set; }
         public int Mileage { get; set; }
+        public decimal DailyRate { get; set; }
+        public decimal Deposit { get; set; }
+
         public CarStatus Status { get; set; }
     }
 }
