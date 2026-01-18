@@ -1,5 +1,15 @@
 [
   {
+    "ContainingType": "AppLayer.Controllers.AuthTestController",
+    "Method": "WhoAmI",
+    "RelativePath": "api/AuthTest/WhoAmI",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AppLayer.Controllers.BookingController",
     "Method": "Get",
     "RelativePath": "api/Booking/{id}",

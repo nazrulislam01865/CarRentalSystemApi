@@ -1,7 +1,9 @@
 ﻿using BLL.DTOs;
 using BLL.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace AppLayer.Controllers
 {
@@ -57,12 +59,18 @@ namespace AppLayer.Controllers
             return Ok(data);
         }
 
+        [Authorize(Policy = "AdminOrStaff")]
         [HttpPost("Approve")]
         public IActionResult Approve(ApproveBookingDTO dto)
         {
-            var data = service.Approve(dto.BookingId,dto.ApprovedById, out var msg);
-            if (!data) return BadRequest(msg);
-            return Ok(msg);
+            var idStr = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (!int.TryParse(idStr, out var approverId))
+                return Unauthorized("Invalid authenticated user.");
+
+            var ok = service.Approve(dto.BookingId, approverId, out var message);
+            if (!ok) return BadRequest(message);
+
+            return Ok(message);
         }
 
         [HttpPost("Start/{bookingId}")]

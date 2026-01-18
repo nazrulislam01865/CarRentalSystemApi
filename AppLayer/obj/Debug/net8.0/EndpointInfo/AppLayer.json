@@ -5,6 +5,18 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/AuthTest/WhoAmI": {
+      "get": {
+        "tags": [
+          "AuthTest"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Booking/All": {
       "get": {
         "tags": [
@@ -594,10 +606,6 @@
           "bookingId": {
             "type": "integer",
             "format": "int32"
-          },
-          "approvedById": {
-            "type": "integer",
-            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -826,6 +834,18 @@
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "basic": {
+        "type": "http",
+        "description": "Basic Authorization header using the Basic scheme (email:password).",
+        "scheme": "basic"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "basic": [ ]
+    }
+  ]
 }

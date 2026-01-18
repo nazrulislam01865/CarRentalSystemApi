@@ -17,7 +17,8 @@ namespace DAL.Repos
             this.db = db;
         }
         public bool Create(Car c)
-        {
+        {   
+            if(c.PlateNumber == db.Cars.FirstOrDefault().PlateNumber) return (false);
             db.Cars.Add(c);
             return db.SaveChanges() > 0;
         }

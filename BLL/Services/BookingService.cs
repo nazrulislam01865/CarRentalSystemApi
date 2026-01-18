@@ -3,6 +3,7 @@ using DAL;
 using DAL.EF.Models.Entities;
 using DAL.EF.Models.Enums;
 using DAL.Migrations;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -185,7 +186,7 @@ namespace BLL.Services
             return factory.BookingData().Delete(id);
         }
         // Approve booking (Admin/Staff action)
-        public bool Approve(int bookingId, int approvedById, out string message)
+        public bool Approve(int bookingId, int approverId, out string message)
         {
             message = "";
 
@@ -202,10 +203,10 @@ namespace BLL.Services
                 return false;
             }
 
-            var approver = factory.UserData().Get(approvedById);
+            var approver = factory.UserData().Get(approverId);
             if (approver == null)
             {
-                message = "Approver (Admin/Staff) not found.";
+                message = "Approver not found.";
                 return false;
             }
 
@@ -215,7 +216,7 @@ namespace BLL.Services
                 return false;
             }
 
-            // ✅ Must be fully paid before confirmation        
+            // Must be fully paid
             var paidSoFar = booking.Payments?
                 .Where(p => p.Status == PaymentStatus.Paid)
                 .Sum(p => p.Amount) ?? 0m;
@@ -226,19 +227,12 @@ namespace BLL.Services
                 return false;
             }
 
-            // ✅ If another booking got confirmed first for same car/date, approval should fail        
-            if (factory.BookingData().HasOverlappingConfirmedOrActiveBooking(
-                booking.CarId, booking.StartDate.Date, booking.EndDate.Date, excludeBookingId: booking.Id))
-            {
-                message = "Cannot approve: car already confirmed/active for overlapping dates.";
-                return false;
-            }
-
             booking.Status = BookingStatus.Confirmed;
-            booking.ApprovedById = approvedById;
+            booking.ApprovedById = approverId;
+            booking.Status = BookingStatus.Confirmed;
 
             var ok = factory.BookingData().Update(booking);
-            message = ok ? "Booking confirmed (Approved)." : "Booking approval failed.";
+            message = ok ? "Booking approved (Confirmed)." : "Booking approval failed.";
             return ok;
         }
 
@@ -295,5 +289,6 @@ namespace BLL.Services
             message = "Booking started. Car is now Rented.";
             return true;
         }
+
     }
 }

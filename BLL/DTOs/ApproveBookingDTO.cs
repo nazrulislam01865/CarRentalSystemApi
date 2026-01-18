@@ -9,6 +9,5 @@ namespace BLL.DTOs
     public class ApproveBookingDTO
     {
         public int BookingId { get; set; }
-        public int ApprovedById { get; set; }
     }
 }
