@@ -3,16 +3,92 @@
   "WorkspaceRootPath": "H:\\Git\\CarRentalSystemApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|h:\\git\\carrentalsystemapi\\dal\\ef\\models\\enums\\bookingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|solutionrelative:dal\\ef\\models\\enums\\bookingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{364E4DDF-7B05-4664-BB98-49A0241F10E0}|AppLayer\\AppLayer.csproj|h:\\git\\carrentalsystemapi\\applayer\\auth\\basicauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{364E4DDF-7B05-4664-BB98-49A0241F10E0}|AppLayer\\AppLayer.csproj|solutionrelative:applayer\\auth\\basicauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|h:\\git\\carrentalsystemapi\\dal\\ef\\models\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|solutionrelative:dal\\ef\\models\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{364E4DDF-7B05-4664-BB98-49A0241F10E0}|AppLayer\\AppLayer.csproj|h:\\git\\carrentalsystemapi\\applayer\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{364E4DDF-7B05-4664-BB98-49A0241F10E0}|AppLayer\\AppLayer.csproj|solutionrelative:applayer\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E957BBAE-3FBB-41B4-B4C0-9002634EAEDB}|BLL\\BLL.csproj|h:\\git\\carrentalsystemapi\\bll\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E957BBAE-3FBB-41B4-B4C0-9002634EAEDB}|BLL\\BLL.csproj|solutionrelative:bll\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E957BBAE-3FBB-41B4-B4C0-9002634EAEDB}|BLL\\BLL.csproj|h:\\git\\carrentalsystemapi\\bll\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E957BBAE-3FBB-41B4-B4C0-9002634EAEDB}|BLL\\BLL.csproj|solutionrelative:bll\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|h:\\git\\carrentalsystemapi\\dal\\ef\\models\\enums\\paymentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|solutionrelative:dal\\ef\\models\\enums\\paymentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{364E4DDF-7B05-4664-BB98-49A0241F10E0}|AppLayer\\AppLayer.csproj|h:\\git\\carrentalsystemapi\\applayer\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{364E4DDF-7B05-4664-BB98-49A0241F10E0}|AppLayer\\AppLayer.csproj|solutionrelative:applayer\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|h:\\git\\carrentalsystemapi\\dal\\ef\\models\\entities\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|solutionrelative:dal\\ef\\models\\entities\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|h:\\git\\carrentalsystemapi\\dal\\repos\\paymentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|solutionrelative:dal\\repos\\paymentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E957BBAE-3FBB-41B4-B4C0-9002634EAEDB}|BLL\\BLL.csproj|h:\\git\\carrentalsystemapi\\bll\\mapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E957BBAE-3FBB-41B4-B4C0-9002634EAEDB}|BLL\\BLL.csproj|solutionrelative:bll\\mapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|h:\\git\\carrentalsystemapi\\dal\\ef\\models\\enums\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|solutionrelative:dal\\ef\\models\\enums\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|h:\\git\\carrentalsystemapi\\dal\\ef\\models\\enums\\bookingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|solutionrelative:dal\\ef\\models\\enums\\bookingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{364E4DDF-7B05-4664-BB98-49A0241F10E0}|AppLayer\\AppLayer.csproj|h:\\git\\carrentalsystemapi\\applayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{364E4DDF-7B05-4664-BB98-49A0241F10E0}|AppLayer\\AppLayer.csproj|solutionrelative:applayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|h:\\git\\carrentalsystemapi\\dal\\repos\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|solutionrelative:dal\\repos\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|h:\\git\\carrentalsystemapi\\dal\\repos\\carrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|solutionrelative:dal\\repos\\carrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|h:\\git\\carrentalsystemapi\\dal\\repos\\bookingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|solutionrelative:dal\\repos\\bookingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|h:\\git\\carrentalsystemapi\\dal\\ef\\models\\entities\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|solutionrelative:dal\\ef\\models\\entities\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|h:\\git\\carrentalsystemapi\\dal\\ef\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|solutionrelative:dal\\ef\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|h:\\git\\carrentalsystemapi\\dal\\ef\\umscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|solutionrelative:dal\\ef\\umscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|h:\\git\\carrentalsystemapi\\dal\\dataaccessfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|solutionrelative:dal\\dataaccessfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E957BBAE-3FBB-41B4-B4C0-9002634EAEDB}|BLL\\BLL.csproj|h:\\git\\carrentalsystemapi\\bll\\dtos\\paymentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E957BBAE-3FBB-41B4-B4C0-9002634EAEDB}|BLL\\BLL.csproj|solutionrelative:bll\\dtos\\paymentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|h:\\git\\carrentalsystemapi\\dal\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|h:\\git\\carrentalsystemapi\\dal\\ef\\models\\entities\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,32 +99,8 @@
       "RelativeMoniker": "D:0:0:{E957BBAE-3FBB-41B4-B4C0-9002634EAEDB}|BLL\\BLL.csproj|solutionrelative:bll\\dtos\\bookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|h:\\git\\carrentalsystemapi\\dal\\ef\\umscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|solutionrelative:dal\\ef\\umscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|h:\\git\\carrentalsystemapi\\dal\\ef\\models\\entities\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|solutionrelative:dal\\ef\\models\\entities\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|h:\\git\\carrentalsystemapi\\dal\\repos\\carrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|solutionrelative:dal\\repos\\carrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{364E4DDF-7B05-4664-BB98-49A0241F10E0}|AppLayer\\AppLayer.csproj|h:\\git\\carrentalsystemapi\\applayer\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{364E4DDF-7B05-4664-BB98-49A0241F10E0}|AppLayer\\AppLayer.csproj|solutionrelative:applayer\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{364E4DDF-7B05-4664-BB98-49A0241F10E0}|AppLayer\\AppLayer.csproj|h:\\git\\carrentalsystemapi\\applayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{364E4DDF-7B05-4664-BB98-49A0241F10E0}|AppLayer\\AppLayer.csproj|solutionrelative:applayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E957BBAE-3FBB-41B4-B4C0-9002634EAEDB}|BLL\\BLL.csproj|h:\\git\\carrentalsystemapi\\bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E957BBAE-3FBB-41B4-B4C0-9002634EAEDB}|BLL\\BLL.csproj|solutionrelative:bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E957BBAE-3FBB-41B4-B4C0-9002634EAEDB}|BLL\\BLL.csproj|h:\\git\\carrentalsystemapi\\bll\\mapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E957BBAE-3FBB-41B4-B4C0-9002634EAEDB}|BLL\\BLL.csproj|solutionrelative:bll\\mapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E957BBAE-3FBB-41B4-B4C0-9002634EAEDB}|BLL\\BLL.csproj|h:\\git\\carrentalsystemapi\\bll\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,24 +115,12 @@
       "RelativeMoniker": "D:0:0:{E957BBAE-3FBB-41B4-B4C0-9002634EAEDB}|BLL\\BLL.csproj|solutionrelative:bll\\dtos\\cardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|h:\\git\\carrentalsystemapi\\dal\\dataaccessfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|solutionrelative:dal\\dataaccessfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|h:\\git\\carrentalsystemapi\\dal\\ef\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|solutionrelative:dal\\ef\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{364E4DDF-7B05-4664-BB98-49A0241F10E0}|AppLayer\\AppLayer.csproj|h:\\git\\carrentalsystemapi\\applayer\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{364E4DDF-7B05-4664-BB98-49A0241F10E0}|AppLayer\\AppLayer.csproj|solutionrelative:applayer\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{364E4DDF-7B05-4664-BB98-49A0241F10E0}|AppLayer\\AppLayer.csproj|h:\\git\\carrentalsystemapi\\applayer\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{364E4DDF-7B05-4664-BB98-49A0241F10E0}|AppLayer\\AppLayer.csproj|solutionrelative:applayer\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|h:\\git\\carrentalsystemapi\\dal\\repos\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44B02415-1A32-46E0-91D3-211CBEF9C343}|DAL\\DAL.csproj|solutionrelative:dal\\repos\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,43 +130,105 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BookingRepo.cs",
-              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\DAL\\Repos\\BookingRepo.cs",
-              "RelativeDocumentMoniker": "DAL\\Repos\\BookingRepo.cs",
-              "ToolTip": "H:\\Git\\CarRentalSystemApi\\DAL\\Repos\\BookingRepo.cs",
-              "RelativeToolTip": "DAL\\Repos\\BookingRepo.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAqwBYAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "BasicAuthenticationHandler.cs",
+              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\AppLayer\\Auth\\BasicAuthenticationHandler.cs",
+              "RelativeDocumentMoniker": "AppLayer\\Auth\\BasicAuthenticationHandler.cs",
+              "ToolTip": "H:\\Git\\CarRentalSystemApi\\AppLayer\\Auth\\BasicAuthenticationHandler.cs",
+              "RelativeToolTip": "AppLayer\\Auth\\BasicAuthenticationHandler.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADEAAAB/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T17:00:10.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BookingDTO.cs",
-              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\BLL\\DTOs\\BookingDTO.cs",
-              "RelativeDocumentMoniker": "BLL\\DTOs\\BookingDTO.cs",
-              "ToolTip": "H:\\Git\\CarRentalSystemApi\\BLL\\DTOs\\BookingDTO.cs",
-              "RelativeToolTip": "BLL\\DTOs\\BookingDTO.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T17:21:30.14Z",
+              "WhenOpened": "2026-01-18T16:48:22.473Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\DAL\\EF\\Models\\Enums\\UserRole.cs",
+              "RelativeDocumentMoniker": "DAL\\EF\\Models\\Enums\\UserRole.cs",
+              "ToolTip": "H:\\Git\\CarRentalSystemApi\\DAL\\EF\\Models\\Enums\\UserRole.cs",
+              "RelativeToolTip": "DAL\\EF\\Models\\Enums\\UserRole.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-18T16:36:06.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\BLL\\Services\\PaymentService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\PaymentService.cs",
+              "ToolTip": "H:\\Git\\CarRentalSystemApi\\BLL\\Services\\PaymentService.cs",
+              "RelativeToolTip": "BLL\\Services\\PaymentService.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAAEEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-18T14:18:42.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PaymentRepo.cs",
+              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\DAL\\Repos\\PaymentRepo.cs",
+              "RelativeDocumentMoniker": "DAL\\Repos\\PaymentRepo.cs",
+              "ToolTip": "H:\\Git\\CarRentalSystemApi\\DAL\\Repos\\PaymentRepo.cs",
+              "RelativeToolTip": "DAL\\Repos\\PaymentRepo.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAC0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-18T14:10:37.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\AppLayer\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "AppLayer\\Controllers\\PaymentController.cs",
+              "ToolTip": "H:\\Git\\CarRentalSystemApi\\AppLayer\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "AppLayer\\Controllers\\PaymentController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAACkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-18T14:29:06.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MapperConfig.cs",
+              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\BLL\\MapperConfig.cs",
+              "RelativeDocumentMoniker": "BLL\\MapperConfig.cs",
+              "ToolTip": "H:\\Git\\CarRentalSystemApi\\BLL\\MapperConfig.cs",
+              "RelativeToolTip": "BLL\\MapperConfig.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAAsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T16:53:04.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\AppLayer\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "AppLayer\\Controllers\\BookingController.cs",
+              "ToolTip": "H:\\Git\\CarRentalSystemApi\\AppLayer\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "AppLayer\\Controllers\\BookingController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAEsAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T17:41:29.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "BookingService.cs",
               "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\BLL\\Services\\BookingService.cs",
               "RelativeDocumentMoniker": "BLL\\Services\\BookingService.cs",
               "ToolTip": "H:\\Git\\CarRentalSystemApi\\BLL\\Services\\BookingService.cs",
               "RelativeToolTip": "BLL\\Services\\BookingService.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAADAAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAALUAAAAAAAAAAAAAACgBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-15T17:23:32.042Z",
               "EditorCaption": ""
@@ -134,81 +236,198 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "UMSContext.cs",
-              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\DAL\\EF\\UMSContext.cs",
-              "RelativeDocumentMoniker": "DAL\\EF\\UMSContext.cs",
-              "ToolTip": "H:\\Git\\CarRentalSystemApi\\DAL\\EF\\UMSContext.cs",
-              "RelativeToolTip": "DAL\\EF\\UMSContext.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Title": "PaymentStatus.cs",
+              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\DAL\\EF\\Models\\Enums\\PaymentStatus.cs",
+              "RelativeDocumentMoniker": "DAL\\EF\\Models\\Enums\\PaymentStatus.cs",
+              "ToolTip": "H:\\Git\\CarRentalSystemApi\\DAL\\EF\\Models\\Enums\\PaymentStatus.cs",
+              "RelativeToolTip": "DAL\\EF\\Models\\Enums\\PaymentStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-11T15:34:00.115Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-18T14:09:18.016Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
               "Title": "BookingStatus.cs",
               "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\DAL\\EF\\Models\\Enums\\BookingStatus.cs",
               "RelativeDocumentMoniker": "DAL\\EF\\Models\\Enums\\BookingStatus.cs",
               "ToolTip": "H:\\Git\\CarRentalSystemApi\\DAL\\EF\\Models\\Enums\\BookingStatus.cs",
               "RelativeToolTip": "DAL\\EF\\Models\\Enums\\BookingStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T17:01:16.85Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Booking.cs",
-              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\DAL\\EF\\Models\\Entities\\Booking.cs",
-              "RelativeDocumentMoniker": "DAL\\EF\\Models\\Entities\\Booking.cs",
-              "ToolTip": "H:\\Git\\CarRentalSystemApi\\DAL\\EF\\Models\\Entities\\Booking.cs",
-              "RelativeToolTip": "DAL\\EF\\Models\\Entities\\Booking.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAAB4AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T17:01:33.209Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BookingController.cs",
-              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\AppLayer\\Controllers\\BookingController.cs",
-              "RelativeDocumentMoniker": "AppLayer\\Controllers\\BookingController.cs",
-              "ToolTip": "H:\\Git\\CarRentalSystemApi\\AppLayer\\Controllers\\BookingController.cs",
-              "RelativeToolTip": "AppLayer\\Controllers\\BookingController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACMAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T17:41:29.481Z"
+              "WhenOpened": "2026-01-15T17:01:16.85Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\DAL\\EF\\Models\\Entities\\Payment.cs",
+              "RelativeDocumentMoniker": "DAL\\EF\\Models\\Entities\\Payment.cs",
+              "ToolTip": "H:\\Git\\CarRentalSystemApi\\DAL\\EF\\Models\\Entities\\Payment.cs",
+              "RelativeToolTip": "DAL\\EF\\Models\\Entities\\Payment.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-18T14:08:31.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\AppLayer\\Program.cs",
+              "RelativeDocumentMoniker": "AppLayer\\Program.cs",
+              "ToolTip": "H:\\Git\\CarRentalSystemApi\\AppLayer\\Program.cs",
+              "RelativeToolTip": "AppLayer\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T15:32:32.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PaymentMethod.cs",
+              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\DAL\\EF\\Models\\Enums\\PaymentMethod.cs",
+              "RelativeDocumentMoniker": "DAL\\EF\\Models\\Enums\\PaymentMethod.cs",
+              "ToolTip": "H:\\Git\\CarRentalSystemApi\\DAL\\EF\\Models\\Enums\\PaymentMethod.cs",
+              "RelativeToolTip": "DAL\\EF\\Models\\Enums\\PaymentMethod.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-18T14:09:47.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserRepo.cs",
+              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\DAL\\Repos\\UserRepo.cs",
+              "RelativeDocumentMoniker": "DAL\\Repos\\UserRepo.cs",
+              "ToolTip": "H:\\Git\\CarRentalSystemApi\\DAL\\Repos\\UserRepo.cs",
+              "RelativeToolTip": "DAL\\Repos\\UserRepo.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T15:51:35.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "CarRepo.cs",
               "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\DAL\\Repos\\CarRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repos\\CarRepo.cs",
               "ToolTip": "H:\\Git\\CarRentalSystemApi\\DAL\\Repos\\CarRepo.cs",
               "RelativeToolTip": "DAL\\Repos\\CarRepo.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAAAB0AAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAB0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-11T16:18:37.824Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
+              "Title": "BookingRepo.cs",
+              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\DAL\\Repos\\BookingRepo.cs",
+              "RelativeDocumentMoniker": "DAL\\Repos\\BookingRepo.cs",
+              "ToolTip": "H:\\Git\\CarRentalSystemApi\\DAL\\Repos\\BookingRepo.cs",
+              "RelativeToolTip": "DAL\\Repos\\BookingRepo.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T17:00:10.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Car.cs",
               "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\DAL\\EF\\Models\\Entities\\Car.cs",
               "RelativeDocumentMoniker": "DAL\\EF\\Models\\Entities\\Car.cs",
               "ToolTip": "H:\\Git\\CarRentalSystemApi\\DAL\\EF\\Models\\Entities\\Car.cs",
               "RelativeToolTip": "DAL\\EF\\Models\\Entities\\Car.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAAB0AAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAAB0AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-11T16:07:56.196Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
+              "Title": "User.cs",
+              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\DAL\\EF\\Models\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "DAL\\EF\\Models\\Entities\\User.cs",
+              "ToolTip": "H:\\Git\\CarRentalSystemApi\\DAL\\EF\\Models\\Entities\\User.cs",
+              "RelativeToolTip": "DAL\\EF\\Models\\Entities\\User.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABAAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T15:34:03.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UMSContext.cs",
+              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\DAL\\EF\\UMSContext.cs",
+              "RelativeDocumentMoniker": "DAL\\EF\\UMSContext.cs",
+              "ToolTip": "H:\\Git\\CarRentalSystemApi\\DAL\\EF\\UMSContext.cs",
+              "RelativeToolTip": "DAL\\EF\\UMSContext.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAABcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T15:34:00.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PaymentDTO.cs",
+              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\BLL\\DTOs\\PaymentDTO.cs",
+              "RelativeDocumentMoniker": "BLL\\DTOs\\PaymentDTO.cs",
+              "ToolTip": "H:\\Git\\CarRentalSystemApi\\BLL\\DTOs\\PaymentDTO.cs",
+              "RelativeToolTip": "BLL\\DTOs\\PaymentDTO.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-18T14:18:57.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DataAccessFactory.cs",
+              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\DAL\\DataAccessFactory.cs",
+              "RelativeDocumentMoniker": "DAL\\DataAccessFactory.cs",
+              "ToolTip": "H:\\Git\\CarRentalSystemApi\\DAL\\DataAccessFactory.cs",
+              "RelativeToolTip": "DAL\\DataAccessFactory.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T16:09:31.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\DAL\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\IRepository.cs",
+              "ToolTip": "H:\\Git\\CarRentalSystemApi\\DAL\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-18T14:12:12.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BookingDTO.cs",
+              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\BLL\\DTOs\\BookingDTO.cs",
+              "RelativeDocumentMoniker": "BLL\\DTOs\\BookingDTO.cs",
+              "ToolTip": "H:\\Git\\CarRentalSystemApi\\BLL\\DTOs\\BookingDTO.cs",
+              "RelativeToolTip": "BLL\\DTOs\\BookingDTO.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T17:21:30.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\DAL\\EF\\Models\\Entities\\Booking.cs",
+              "RelativeDocumentMoniker": "DAL\\EF\\Models\\Entities\\Booking.cs",
+              "ToolTip": "H:\\Git\\CarRentalSystemApi\\DAL\\EF\\Models\\Entities\\Booking.cs",
+              "RelativeToolTip": "DAL\\EF\\Models\\Entities\\Booking.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAACEAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T17:01:33.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "UserService.cs",
               "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\BLL\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "BLL\\Services\\UserService.cs",
@@ -220,19 +439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MapperConfig.cs",
-              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\BLL\\MapperConfig.cs",
-              "RelativeDocumentMoniker": "BLL\\MapperConfig.cs",
-              "ToolTip": "H:\\Git\\CarRentalSystemApi\\BLL\\MapperConfig.cs",
-              "RelativeToolTip": "BLL\\MapperConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-11T16:53:04.198Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 25,
               "Title": "CarService.cs",
               "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\BLL\\Services\\CarService.cs",
               "RelativeDocumentMoniker": "BLL\\Services\\CarService.cs",
@@ -244,31 +451,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\AppLayer\\Program.cs",
-              "RelativeDocumentMoniker": "AppLayer\\Program.cs",
-              "ToolTip": "H:\\Git\\CarRentalSystemApi\\AppLayer\\Program.cs",
-              "RelativeToolTip": "AppLayer\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-11T15:32:32.809Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "User.cs",
-              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\DAL\\EF\\Models\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "DAL\\EF\\Models\\Entities\\User.cs",
-              "ToolTip": "H:\\Git\\CarRentalSystemApi\\DAL\\EF\\Models\\Entities\\User.cs",
-              "RelativeToolTip": "DAL\\EF\\Models\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-11T15:34:03.745Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 27,
               "Title": "CarDTO.cs",
               "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\BLL\\DTOs\\CarDTO.cs",
               "RelativeDocumentMoniker": "BLL\\DTOs\\CarDTO.cs",
@@ -280,7 +463,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 26,
               "Title": "UserDTO.cs",
               "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\BLL\\DTOs\\UserDTO.cs",
               "RelativeDocumentMoniker": "BLL\\DTOs\\UserDTO.cs",
@@ -292,19 +475,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DataAccessFactory.cs",
-              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\DAL\\DataAccessFactory.cs",
-              "RelativeDocumentMoniker": "DAL\\DataAccessFactory.cs",
-              "ToolTip": "H:\\Git\\CarRentalSystemApi\\DAL\\DataAccessFactory.cs",
-              "RelativeToolTip": "DAL\\DataAccessFactory.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T16:09:31.436Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 29,
               "Title": "UserController.cs",
               "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\AppLayer\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "AppLayer\\Controllers\\UserController.cs",
@@ -316,19 +487,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "UserRepo.cs",
-              "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\DAL\\Repos\\UserRepo.cs",
-              "RelativeDocumentMoniker": "DAL\\Repos\\UserRepo.cs",
-              "ToolTip": "H:\\Git\\CarRentalSystemApi\\DAL\\Repos\\UserRepo.cs",
-              "RelativeToolTip": "DAL\\Repos\\UserRepo.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-11T15:51:35.512Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 28,
               "Title": "CarController.cs",
               "DocumentMoniker": "H:\\Git\\CarRentalSystemApi\\AppLayer\\Controllers\\CarController.cs",
               "RelativeDocumentMoniker": "AppLayer\\Controllers\\CarController.cs",

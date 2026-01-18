@@ -17,7 +17,9 @@ builder.Services.AddScoped<DataAccessFactory>();
 builder.Services.AddScoped<UserRepo>();
 builder.Services.AddScoped<CarRepo>();
 builder.Services.AddScoped<BookingRepo>();
+builder.Services.AddScoped<PaymentRepo>();
 builder.Services.AddScoped<CarService>();
+builder.Services.AddScoped<PaymentService>();
 builder.Services.AddScoped<BookingService>();
 builder.Services.AddDbContext<UMSContext>(opt => {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DbConn"));

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAL.EF.Models.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ namespace DAL.EF.Models.Entities
         public string Email { get; set; }
         public string Phone { get; set; }
         public string Password { get; set; }
+        public UserRole Role { get; set; } = UserRole.Customer;
         public virtual ICollection<Booking> BookingsAsCustomer { get; set; } = new List<Booking>();
         public virtual ICollection<Booking> BookingsApproved { get; set; } = new List<Booking>();
 

@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BLL.DTOs
+{
+    public class ApproveBookingDTO
+    {
+        public int BookingId { get; set; }
+        public int ApprovedById { get; set; }
+    }
+}

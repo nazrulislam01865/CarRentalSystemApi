@@ -27,6 +27,54 @@
   },
   {
     "ContainingType": "AppLayer.Controllers.BookingController",
+    "Method": "Approve",
+    "RelativePath": "api/Booking/Approve",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BLL.DTOs.ApproveBookingDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLayer.Controllers.BookingController",
+    "Method": "Cancel",
+    "RelativePath": "api/Booking/Cancel/{BookingId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BookingId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLayer.Controllers.BookingController",
+    "Method": "Complete",
+    "RelativePath": "api/Booking/Complete/{bookingId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookingId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLayer.Controllers.BookingController",
     "Method": "Create",
     "RelativePath": "api/Booking/Create",
     "HttpMethod": "POST",
@@ -36,6 +84,54 @@
       {
         "Name": "dto",
         "Type": "BLL.DTOs.BookingDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLayer.Controllers.BookingController",
+    "Method": "ByCustomer",
+    "RelativePath": "api/Booking/Customer/{customerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLayer.Controllers.BookingController",
+    "Method": "Delete",
+    "RelativePath": "api/Booking/Delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLayer.Controllers.BookingController",
+    "Method": "Start",
+    "RelativePath": "api/Booking/Start/{bookingId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookingId",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -110,6 +206,64 @@
       {
         "Name": "c",
         "Type": "BLL.DTOs.CarDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLayer.Controllers.PaymentController",
+    "Method": "Get",
+    "RelativePath": "api/Payment/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLayer.Controllers.PaymentController",
+    "Method": "All",
+    "RelativePath": "api/Payment/All",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLayer.Controllers.PaymentController",
+    "Method": "ByBooking",
+    "RelativePath": "api/Payment/Booking/{bookingId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookingId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLayer.Controllers.PaymentController",
+    "Method": "Pay",
+    "RelativePath": "api/Payment/Pay",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BLL.DTOs.PaymentDTO",
         "IsRequired": true
       }
     ],

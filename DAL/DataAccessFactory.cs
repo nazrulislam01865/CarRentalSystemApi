@@ -26,5 +26,9 @@ namespace DAL
         {
             return new BookingRepo(db);
         }
+        public PaymentRepo PaymentData()
+        {
+            return new PaymentRepo(db);
+        }
     }
 }

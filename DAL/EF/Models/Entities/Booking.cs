@@ -13,15 +13,15 @@ namespace DAL.EF.Models.Entities
         public int Id { get; set; }
 
         public int CarId { get; set; }
-        public virtual Car? Car { get; set; }
+        public virtual Car Car { get; set; }
 
         public int CustomerId { get; set; }
-        public virtual User? Customer { get; set; }
+        public virtual User Customer { get; set; }
 
         // Staff/Admin who confirmed the booking (optional)
         //[ForeignKey("")]
         public int? ApprovedById { get; set; }
-        public virtual User? ApprovedBy { get; set; }
+        public virtual User ApprovedBy { get; set; }
 
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
@@ -30,5 +30,7 @@ namespace DAL.EF.Models.Entities
 
         public decimal TotalAmount { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+        public virtual ICollection<Payment> Payments { get; set; } = new List<Payment>();
     }
 }
