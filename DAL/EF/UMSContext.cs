@@ -17,6 +17,7 @@ namespace DAL.EF
         public DbSet<Car> Cars { get; set; }
         public DbSet<Booking> Bookings { get; set; }
         public DbSet<Payment> Payments { get; set; }
+        public DbSet<Notification> Notifications { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -66,6 +67,25 @@ namespace DAL.EF
 
                 // Helpful index for availability checks
                 e.HasIndex(b => new { b.CarId, b.StartDate, b.EndDate });
+            });
+
+            modelBuilder.Entity<Notification>(e =>
+            {
+                e.Property(x => x.Type).HasConversion<int>();
+                e.Property(x => x.Title).HasMaxLength(150);
+                e.Property(x => x.Message).HasMaxLength(500);
+
+                e.HasOne(x => x.User)
+                    .WithMany()
+                    .HasForeignKey(x => x.UserId)
+                    .OnDelete(DeleteBehavior.Restrict);
+
+                e.HasOne(x => x.Booking)
+                    .WithMany()
+                    .HasForeignKey(x => x.BookingId)
+                    .OnDelete(DeleteBehavior.SetNull);
+
+                e.HasIndex(x => new { x.UserId, x.IsRead, x.CreatedAt });
             });
         }
 

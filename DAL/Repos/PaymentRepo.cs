@@ -1,7 +1,9 @@
 ﻿using DAL.EF;
 using DAL.EF.Models.Entities;
+using DAL.EF.Models.Enums;
 using DAL.Interfaces;
 using DAL.Migrations;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,8 +45,21 @@ namespace DAL.Repos
         public List<Payment> GetByBooking(int bookingId)
         {
             return db.Payments
-                .Where(x=>x.BookingId == bookingId)
+                .Where(x => x.BookingId == bookingId)
                 .OrderByDescending(x => x.CreatedAt)
+                .ToList();
+        }
+
+        // Reports: paid payments in a date range (uses PaidAt)
+        public List<Payment> GetPaidBetween(DateTime fromUtc, DateTime toUtc)
+        {
+            return db.Payments
+                .AsNoTracking()
+                .Where(p => p.Status == PaymentStatus.Paid
+                            && p.PaidAt.HasValue
+                            && p.PaidAt.Value >= fromUtc
+                            && p.PaidAt.Value < toUtc)
+                .OrderBy(p => p.PaidAt)
                 .ToList();
         }
     }

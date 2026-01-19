@@ -30,5 +30,10 @@ namespace DAL
         {
             return new PaymentRepo(db);
         }
+        public NotificationRepo NotificationData()
+        {
+            return new NotificationRepo(db);
+        }
+        
     }
 }

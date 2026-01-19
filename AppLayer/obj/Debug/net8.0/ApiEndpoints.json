@@ -222,6 +222,79 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AppLayer.Controllers.NotificationController",
+    "Method": "ByUser",
+    "RelativePath": "api/Notification/ByUser/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "unreadOnly",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "take",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLayer.Controllers.NotificationController",
+    "Method": "Mine",
+    "RelativePath": "api/Notification/Mine",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "unreadOnly",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "take",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLayer.Controllers.NotificationController",
+    "Method": "MarkRead",
+    "RelativePath": "api/Notification/Read/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLayer.Controllers.NotificationController",
+    "Method": "MarkAllRead",
+    "RelativePath": "api/Notification/ReadAll",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AppLayer.Controllers.PaymentController",
     "Method": "Get",
     "RelativePath": "api/Payment/{id}",
@@ -275,6 +348,74 @@
         "Name": "dto",
         "Type": "BLL.DTOs.PaymentDTO",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLayer.Controllers.ReportController",
+    "Method": "RevenueDaily",
+    "RelativePath": "api/Report/RevenueDaily",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fromUtc",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "toUtc",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLayer.Controllers.ReportController",
+    "Method": "RevenueMonthly",
+    "RelativePath": "api/Report/RevenueMonthly",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "month",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "year",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLayer.Controllers.ReportController",
+    "Method": "RevenueRangeByHour",
+    "RelativePath": "api/Report/RevenueRangeByHour",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dateUtc",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fromHour",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "toHour",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

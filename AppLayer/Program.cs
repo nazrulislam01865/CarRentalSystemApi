@@ -48,8 +48,6 @@ using DAL;
 using DAL.EF;
 using DAL.Repos;
 using Microsoft.EntityFrameworkCore;
-
-// ✅ ADDED (for Basic Auth + Swagger auth UI)
 using AppLayer.Auth;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.OpenApi.Models;
@@ -64,7 +62,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// ✅ ADDED (keep AddSwaggerGen() unchanged, configure it separately)
+
 builder.Services.Configure<SwaggerGenOptions>(c =>
 {
     c.AddSecurityDefinition("basic", new OpenApiSecurityScheme
@@ -98,14 +96,17 @@ builder.Services.AddScoped<UserRepo>();
 builder.Services.AddScoped<CarRepo>();
 builder.Services.AddScoped<BookingRepo>();
 builder.Services.AddScoped<PaymentRepo>();
+builder.Services.AddScoped<NotificationRepo>();
 builder.Services.AddScoped<CarService>();
 builder.Services.AddScoped<PaymentService>();
 builder.Services.AddScoped<BookingService>();
+builder.Services.AddScoped<NotificationService>();
+builder.Services.AddScoped<ReportService>();
 builder.Services.AddDbContext<UMSContext>(opt => {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DbConn"));
 });
 
-// ✅ ADDED (Authentication + Authorization policy)
+
 builder.Services.AddAuthentication("Basic")
     .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("Basic", null);
 
@@ -125,7 +126,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// ✅ ADDED (must be before UseAuthorization)
+
 app.UseAuthentication();
 
 app.UseAuthorization();

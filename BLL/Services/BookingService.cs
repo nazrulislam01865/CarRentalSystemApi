@@ -15,10 +15,45 @@ namespace BLL.Services
     public class BookingService
     {
         readonly DataAccessFactory factory;
+        private NotificationService Notifier => new NotificationService(factory);
         public BookingService(DataAccessFactory factory)
         {
             this.factory = factory;
         }
+        //Notifiation
+               
+        private void NotifyStatusChange(Booking booking, BookingStatus oldStatus, BookingStatus newStatus)
+        {
+            if (oldStatus == newStatus) return;
+
+            var type = newStatus switch
+            {
+                BookingStatus.Pending => NotificationType.BookingCreated,
+                BookingStatus.Confirmed => NotificationType.BookingApproved,
+                BookingStatus.Active => NotificationType.BookingStarted,
+                BookingStatus.Completed => NotificationType.BookingCompleted,
+                BookingStatus.Cancelled => NotificationType.BookingCancelled,
+                _ => NotificationType.BookingCreated
+            };
+
+            // Customer        
+            Notifier.NotifyUser(
+                booking.CustomerId,
+                type,
+                "Booking Status Updated",
+                $"Your booking #{booking.Id} status changed from {oldStatus} to {newStatus}.",
+                booking.Id
+            );
+
+            // Admin/Staff        
+            Notifier.NotifyAdminsAndStaff(
+                type,
+                "Booking Status Changed",
+                $"Booking #{booking.Id} changed from {oldStatus} to {newStatus}.",
+                booking.Id
+            );
+        }
+
         public List<BookingDTO> All()
         {
             var data = factory.BookingData().Get();
@@ -115,6 +150,21 @@ namespace BLL.Services
             var entity = MapperConfig.GetMapper().Map<Booking>(dto);
             var ok = factory.BookingData().Create(entity);
 
+            if (ok)
+            {
+                Notifier.NotifyUser(dto.CustomerId,
+                    NotificationType.BookingCreated,
+                    "Booking Created",
+                    $"Your booking #{entity.Id} has been created and is now Pending approval.",
+                    entity.Id);
+
+                Notifier.NotifyAdminsAndStaff(
+                    NotificationType.BookingCreated,
+                    "New Booking Request",
+                    $"A new booking #{entity.Id} has been created and requires approval.",
+                    entity.Id);
+            }
+
             message = ok ? "Booking created (Pending)." : "Booking creation failed.";
             return ok;
         }
@@ -142,6 +192,7 @@ namespace BLL.Services
                 message = "Car not found.";
                 return false;
             }
+            var oldStatus = booking.Status;
 
             booking.Status = BookingStatus.Completed;
             var okBooking = factory.BookingData().Update(booking);
@@ -155,6 +206,7 @@ namespace BLL.Services
             var okCar = factory.CarData().Update(car);
             if (!okCar)
             {
+                booking.Status = oldStatus;
                 // rollback booking (best-effort)        
                 booking.Status = BookingStatus.Active;
                 factory.BookingData().Update(booking);
@@ -162,6 +214,8 @@ namespace BLL.Services
                 message = "Failed to update car status to Available.";
                 return false;
             }
+
+            NotifyStatusChange(booking, oldStatus,booking.Status);
 
             message = "Booking completed. Car is now Available.";
             return true;
@@ -177,7 +231,16 @@ namespace BLL.Services
             if (booking.Status != BookingStatus.Pending) return false;
             if(booking.Status== BookingStatus.Confirmed) return false;
             booking.Status = BookingStatus.Cancelled;
-            return factory.BookingData().Update(booking);
+            //return factory.BookingData().Update(booking);
+            var oldStatus = booking.Status;
+            booking.Status = BookingStatus.Cancelled;
+
+            var ok = factory.BookingData().Update(booking);
+            if (ok)
+            {
+                NotifyStatusChange(booking, oldStatus, booking.Status);
+            }
+            return ok;
 
         }
         public bool Delete(int id) {
@@ -227,12 +290,16 @@ namespace BLL.Services
                 return false;
             }
 
-            booking.Status = BookingStatus.Confirmed;
+            var oldStatus = booking.Status;
             booking.ApprovedById = approverId;
             booking.Status = BookingStatus.Confirmed;
 
             var ok = factory.BookingData().Update(booking);
             message = ok ? "Booking approved (Confirmed)." : "Booking approval failed.";
+            if (ok)
+            {
+                NotifyStatusChange(booking, oldStatus, booking.Status);
+            }
             return ok;
         }
 
@@ -266,6 +333,7 @@ namespace BLL.Services
                 return false;
             }
 
+            var oldStatus = booking.Status;
             booking.Status = BookingStatus.Active;
             var okBooking = factory.BookingData().Update(booking);
             if (!okBooking)
@@ -285,7 +353,7 @@ namespace BLL.Services
                 message = "Failed to update car status to Rented.";
                 return false;
             }
-
+            NotifyStatusChange(booking, oldStatus, booking.Status);
             message = "Booking started. Car is now Rented.";
             return true;
         }
