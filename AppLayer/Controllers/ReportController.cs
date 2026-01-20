@@ -73,7 +73,7 @@ namespace AppLayer.Controllers
 
             return Ok(service.RevenueRangeHourly(fromUtc, toUtc));
         }
-
+        // UTC date-time parser
         private static bool TryParseUtc(string input, out DateTime utc)
         {
             if (DateTime.TryParse(input, CultureInfo.InvariantCulture,

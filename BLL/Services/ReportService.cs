@@ -17,7 +17,7 @@ namespace BLL.Services
         {
             var monthNumber = ParseMonth(monthInput);
 
-            // Build UTC range: [first day of month, first day of next month)        
+               
             var fromUtc = new DateTime(year, monthNumber, 1, 0, 0, 0, DateTimeKind.Utc);
             var toUtc = fromUtc.AddMonths(1);
 
@@ -35,7 +35,7 @@ namespace BLL.Services
             };
         }
 
-        // 1) Revenue daily (same logic)
+        //  Revenue daily 
         public List<RevenuePointDTO> RevenueDaily(DateTime fromUtc, DateTime toUtc)
         {
             var paid = factory.PaymentData().GetPaidBetween(fromUtc, toUtc);
@@ -52,7 +52,7 @@ namespace BLL.Services
                 .ToList();
         }
 
-        // 2) Revenue monthly (UPDATED: includes MonthName)
+        //  Revenue monthly 
         public List<RevenueMonthPointDTO> RevenueMonthly(DateTime fromUtc, DateTime toUtc)
         {
             var paid = factory.PaymentData().GetPaidBetween(fromUtc, toUtc);
@@ -72,23 +72,23 @@ namespace BLL.Services
                 .ToList();
         }
 
-        // 3) Revenue range (UPDATED: hour-to-hour breakdown)
+        //  Revenue range 
         public RevenueRangeHourlyDTO RevenueRangeHourly(DateTime fromUtc, DateTime toUtc)
         {
             var paid = factory.PaymentData().GetPaidBetween(fromUtc, toUtc);
 
-            // Group paid amounts by hour bucket
+            // Group paid amounts by hour 
             var byHour = paid
                 .Where(p => p.PaidAt.HasValue)
                 .GroupBy(p =>
                 {
                     var t = p.PaidAt!.Value;
-                    // Bucket to the hour (yyyy-mm-dd HH:00:00)
+                    
                     return DateTime.SpecifyKind(new DateTime(t.Year, t.Month, t.Day, t.Hour, 0, 0), DateTimeKind.Utc);
                 })
                 .ToDictionary(g => g.Key, g => g.Sum(x => x.Amount));
 
-            // Build hourly timeline (fills missing hours with 0)
+            // Build hourly timeline 
             var hours = new List<RevenueHourPointDTO>();
 
             var startHour = DateTime.SpecifyKind(new DateTime(fromUtc.Year, fromUtc.Month, fromUtc.Day, fromUtc.Hour, 0, 0), DateTimeKind.Utc);
@@ -122,7 +122,7 @@ namespace BLL.Services
 
             monthInput = monthInput.Trim();
 
-            // If month is numeric (1-12)        
+                 
             if (int.TryParse(monthInput, out var m))
             {
                 if (m < 1 || m > 12)
@@ -130,7 +130,7 @@ namespace BLL.Services
                 return m;
             }
 
-            // Month name parsing (January, Jan, FEB, etc.)        
+            // Month name parsing        
             var dtfi = CultureInfo.InvariantCulture.DateTimeFormat;
 
             // full month names        
@@ -141,7 +141,7 @@ namespace BLL.Services
                     return i;
             }
 
-            // abbreviated month names (Jan, Feb, etc.)        
+            // abbreviated month names       
             for (int i = 1; i <= 12; i++)
             {
                 var abbr = dtfi.GetAbbreviatedMonthName(i);

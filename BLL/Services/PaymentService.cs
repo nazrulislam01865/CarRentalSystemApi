@@ -40,21 +40,6 @@ namespace BLL.Services
             return MapperConfig.GetMapper().Map<List<PaymentDTO>>(data);
         }
 
-        //public bool Payment(PaymentDTO dto)
-        //{
-        //    if (dto.BookingId <= 0) return (false);
-        //    if (dto.Amount <= 0) return (false);
-        //    var booking = factory.BookingData().Get(dto.BookingId);
-        //    if (booking == null) return (false);
-        //    if (booking.Status == BookingStatus.Cancelled) return (false);
-
-        //    dto.Status = PaymentStatus.Paid;
-        //    var data = MapperConfig.GetMapper().Map<Payment>(dto);
-        //    var result = factory.PaymentData().Create(data);
-        //    return (result);
-
-        //}
-
         public bool Payment(PaymentDTO dto, out string msg)
         {
             msg = string.Empty;
@@ -118,7 +103,7 @@ namespace BLL.Services
 
             var data = MapperConfig.GetMapper().Map<Payment>(dto);
 
-            data.Id = 0; // ensure EF treats it as new
+            data.Id = 0; 
             data.CreatedAt = DateTime.UtcNow;
             data.Status = PaymentStatus.Paid;
             data.PaidAt = DateTime.UtcNow;

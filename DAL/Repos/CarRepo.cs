@@ -30,12 +30,7 @@ namespace DAL.Repos
         {
             return db.Cars.ToList();
         }
-        //public bool Update(Car c)
-        //{
-        //    var ex = Get(c.Id);
-        //    db.Entry(ex).CurrentValues.SetValues(c);
-        //    return db.SaveChanges() > 0;
-        //}
+
         public bool Update(Car u)
         {
             if (u == null || u.Id <= 0)

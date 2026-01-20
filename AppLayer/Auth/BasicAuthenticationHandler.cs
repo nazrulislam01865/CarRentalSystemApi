@@ -65,7 +65,6 @@ namespace AppLayer.Auth
             if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
                 return AuthenticateResult.Fail("Email/password required.");
 
-            // ✅ STRICT DB MATCH: Email AND Password must match
             // SQL Server is usually case-insensitive for Email by default, which is OK.
             var user = await _db.Users
                 .AsNoTracking()
@@ -74,7 +73,7 @@ namespace AppLayer.Auth
             if (user == null)
                 return AuthenticateResult.Fail("Invalid email or password.");
 
-            // ✅ Role comes from DB (Customer/Admin/Staff)
+            //  Role comes from DB (Customer/Admin/Staff)
             var roleName = user.Role.ToString();
 
             var claims = new[]

@@ -17,9 +17,6 @@ namespace DAL.EF.Models.Entities
 
         public int CustomerId { get; set; }
         public virtual User Customer { get; set; }
-
-        // Staff/Admin who confirmed the booking (optional)
-        //[ForeignKey("")]
         public int? ApprovedById { get; set; }
         public virtual User ApprovedBy { get; set; }
 

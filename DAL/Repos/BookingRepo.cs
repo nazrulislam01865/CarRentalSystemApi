@@ -71,12 +71,6 @@ namespace DAL.Repos
                             && endDate > b.StartDate)
                 .ToList();
         }
-        //public decimal GetPaidAmount(int bookingId)
-        //{
-        //    return db.Payments
-        //        .Where(p => p.BookingId == bookingId && p.Status == PaymentStatus.Paid)
-        //        .Sum(p => (decimal?)p.Amount) ?? 0m;
-        //}
         public bool HasOverlappingConfirmedOrActiveBooking(int carId, DateTime startDate, DateTime endDate, int? excludeBookingId = null)
         {
             var q = db.Bookings.Where(b =>

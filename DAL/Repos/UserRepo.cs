@@ -31,28 +31,7 @@ namespace DAL.Repos
         {
             return db.Users.ToList();
         }
-        //public bool Update(User u)
-        //{
-        //    var ex = Get(u.Id);
-        //    if (ex == null) {
-        //        return true;
-        //    }
-        //    db.Entry(u).CurrentValues.SetValues(u);
-        //    return db.SaveChanges() > 0;
-        //}
-        //public bool Update(User u)
-        //{
-        //    if (u == null || u.Id <= 0)
-        //        return false;
-        //    bool exists = db.Users.Any(x => x.Id == u.Id);
-        //    if (!exists)
-        //        return false;
 
-        //    db.Users.Attach(u);
-        //    db.Entry(u).State = EntityState.Modified;
-
-        //    return db.SaveChanges() > 0;
-        //}
         public bool Update(User u)
         {
             if (u == null || u.Id <= 0)

@@ -50,7 +50,7 @@ namespace DAL.Repos
                 .ToList();
         }
 
-        // Reports: paid payments in a date range (uses PaidAt)
+        // Reports: paid payments in a date range 
         public List<Payment> GetPaidBetween(DateTime fromUtc, DateTime toUtc)
         {
             return db.Payments

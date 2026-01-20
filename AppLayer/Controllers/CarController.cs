@@ -15,6 +15,7 @@ namespace AppLayer.Controllers
             this.carService = carService;
         }
         [HttpGet("All")]
+        //Show All Cars
         public IActionResult All()
         {
             var data = carService.All();
@@ -22,24 +23,28 @@ namespace AppLayer.Controllers
 
         }
         [HttpGet("{id}")]
+        //Show Car by Id
         public IActionResult Get(int id)
         {
             var data = carService.Get(id);
             return Ok(data);
         }
         [HttpPost("Create")]
+        //Create Car
         public IActionResult Create(CarDTO c)
         {
             var data = carService.Create(c);
             return Ok(data);
         }
         [HttpPut("Update")]
+        //Update Car
         public IActionResult Update(CarDTO c)
         {
             var data = carService.Update(c);
             return Ok(data);
         }
         [HttpGet("Delete/{id}")]
+        //Delete Car
         public IActionResult Delete(int id)
         {
             var data = carService.Delete(id);

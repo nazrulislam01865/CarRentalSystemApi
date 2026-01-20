@@ -15,38 +15,30 @@ namespace AppLayer.Controllers
             this.service = service;
         }
         [HttpGet("all")]
+        //Show All Users
         public IActionResult All()
         {
             var data = service.All();
             return Ok(data);
         }
         [HttpGet("{id}")]
+        //Show User by Id
         public IActionResult Get(int id)
         {
             var data = service.Get(id);
             return Ok(data);
         }
         [HttpPost("create")]
+        //Create User
         public IActionResult Create(UserDTO d)
         {
 
             var rs = service.Create(d);
             return Ok(rs);
         }
-        //[HttpPut("update")]
-        //public IActionResult Update(UserDTO d)
-        //{
-        //    if (d == null || d.Id == 0)
-        //        return BadRequest("Invalid user data.");
 
-        //    var result = service.Update(d); 
-
-        //    if (result)
-        //        return Ok(new { message = "User updated successfully." });
-        //    else
-        //        return NotFound(new { message = "User not found." });
-        //}
         [HttpPut("update")]
+        //Update User
         public IActionResult Update( UserDTO user)
         {
 
@@ -58,6 +50,7 @@ namespace AppLayer.Controllers
             return Ok("User updated successfully");
         }
         [HttpGet("delete/{id}")]
+        //Delete User
         public IActionResult Delete(int id)
         {
             if(id == 0 || id== null)

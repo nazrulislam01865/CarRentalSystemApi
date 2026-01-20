@@ -18,6 +18,7 @@ namespace AppLayer.Controllers
         }
 
         [HttpGet("All")]
+        //Show All Bookings
         public IActionResult All()
         {
             var data = service.All();
@@ -25,6 +26,7 @@ namespace AppLayer.Controllers
         }
 
         [HttpGet("Customer/{customerId}")]
+        //Show Bookings by Customer
         public IActionResult ByCustomer(int customerId)
         {
             var data = service.ByCustomer(customerId);
@@ -32,12 +34,14 @@ namespace AppLayer.Controllers
         }
 
         [HttpGet("{id}")]
+        //Show Booking by Id
         public IActionResult Get(int id)
         {
             var data = service.Get(id);
             return Ok(data);
         }
         [HttpPost("Create")]
+        //Create Booking
         public IActionResult Create(BookingDTO dto)
         {
             var data = service.Create(dto, out var msg);
@@ -45,6 +49,7 @@ namespace AppLayer.Controllers
             return Ok(data);
         }
         [HttpDelete("Delete/{id}")]
+        //Delete Booking
         public IActionResult Delete(int id)
         {
             var data =  service.Delete(id);
@@ -52,6 +57,7 @@ namespace AppLayer.Controllers
             return Ok(data);
         }
         [HttpPost("Cancel/{BookingId}")]
+        //Cancel Booking
         public IActionResult Cancel(int BookingId)
         {
             var data = service.Cancel(BookingId);
@@ -61,6 +67,7 @@ namespace AppLayer.Controllers
 
         [Authorize(Policy = "AdminOrStaff")]
         [HttpPost("Approve")]
+        //Booking pending -> Approved by Admin/Staff
         public IActionResult Approve(ApproveBookingDTO dto)
         {
             var idStr = User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -74,6 +81,7 @@ namespace AppLayer.Controllers
         }
 
         [HttpPost("Start/{bookingId}")]
+        //  Booking Approved -> Active + Car Unavailable
         public IActionResult Start(int bookingId)
         {
             var ok = service.Start(bookingId, out var message);

@@ -15,18 +15,21 @@ namespace AppLayer.Controllers
             this.service = service;
         }
         [HttpGet("All")]
-        public IActionResult All()
-        {
-            var data = service.All();
-            return Ok(data);
-        }
+        //Show All Payments
+        //public IActionResult All()
+        //{
+        //    var data = service.All();
+        //    return Ok(data);
+        //}
         [HttpGet("{id}")]
+        //Show Payment by Id
         public IActionResult Get(int id)
         {
             var data = service.Get(id);
             return Ok(data);
         }
         [HttpGet("Booking/{bookingId}")]
+        //Show Payment by Booking Id
         public IActionResult ByBooking(int bookingId)
         {
             var data = service.ByBooking(bookingId);
@@ -34,6 +37,7 @@ namespace AppLayer.Controllers
         }
 
         [HttpPost("Pay")]
+        // Endpoint to process a payment
         public IActionResult Pay(PaymentDTO dto)
         {
             var data = service.Payment(dto, out var msg);

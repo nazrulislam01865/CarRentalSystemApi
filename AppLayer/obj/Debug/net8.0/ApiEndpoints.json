@@ -256,6 +256,11 @@
     "Order": 0,
     "Parameters": [
       {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
         "Name": "unreadOnly",
         "Type": "System.Boolean",
         "IsRequired": false
@@ -280,6 +285,11 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -291,7 +301,13 @@
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -312,7 +328,7 @@
   },
   {
     "ContainingType": "AppLayer.Controllers.PaymentController",
-    "Method": "All",
+    "Method": "Get",
     "RelativePath": "api/Payment/All",
     "HttpMethod": "GET",
     "IsController": true,

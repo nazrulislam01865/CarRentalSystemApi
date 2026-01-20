@@ -19,7 +19,7 @@ namespace DAL.Repos
             return db.SaveChanges() > 0;
         }
 
-        public List<Notification> ByUser(int userId, bool unreadOnly = false, int take = 100)
+        public List<Notification> ByUser(int userId, bool unreadOnly, int take = 100)
         {
             var q = db.Notifications
                 .AsNoTracking()

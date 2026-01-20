@@ -20,8 +20,7 @@ namespace BLL.Services
         {
             this.factory = factory;
         }
-        //Notifiation
-               
+        //Notifiation    
         private void NotifyStatusChange(Booking booking, BookingStatus oldStatus, BookingStatus newStatus)
         {
             if (oldStatus == newStatus) return;
@@ -71,30 +70,6 @@ namespace BLL.Services
             return MapperConfig.GetMapper().Map<BookingDTO>(data);
         }
 
-        //public bool Create(BookingDTO dto)
-        //{
-        //    if (dto.CarId <= 0 || dto.CustomerId <= 0)
-        //        return false;
-
-        //    var start = dto.StartDate.Date;
-        //    var end = dto.EndDate.Date;
-        //    if (end <= start)
-        //        return false;
-
-        //    var car = factory.CarData().Get(dto.CarId);
-        //    if (car == null) return false;
-        //    if (car.Status == CarStatus.Maintenance) return false;
-
-
-        //    dto.Status = BookingStatus.Pending;
-        //    dto.ApprovedById = null;
-
-        //    dto.TotalAmount = (decimal)(dto.EndDate - dto.StartDate).TotalDays * car.Deposit; ;
-        //    var entity = MapperConfig.GetMapper().Map<Booking>(dto);
-        //    return factory.BookingData().Create(entity);
-
-        //}
-
         public bool Create(BookingDTO dto, out string message)
         {
             message = "";
@@ -133,7 +108,7 @@ namespace BLL.Services
                 return false;
             }
 
-            // ✅ Block new bookings if this car already has Confirmed/Active booking overlap
+            
             if (factory.BookingData().HasOverlappingConfirmedOrActiveBooking(dto.CarId, start, end))
             {
                 message = "Car is already booked (confirmed/active) for this date range.";
@@ -144,7 +119,7 @@ namespace BLL.Services
             dto.ApprovedById = null;
             dto.CreatedAt = DateTime.UtcNow;
 
-            // Keep your existing pricing logic (you used Deposit)
+            
             dto.TotalAmount = (decimal)(dto.EndDate - dto.StartDate).TotalDays * car.Deposit;
 
             var entity = MapperConfig.GetMapper().Map<Booking>(dto);
@@ -206,8 +181,7 @@ namespace BLL.Services
             var okCar = factory.CarData().Update(car);
             if (!okCar)
             {
-                booking.Status = oldStatus;
-                // rollback booking (best-effort)        
+                booking.Status = oldStatus;      
                 booking.Status = BookingStatus.Active;
                 factory.BookingData().Update(booking);
 
@@ -231,7 +205,6 @@ namespace BLL.Services
             if (booking.Status != BookingStatus.Pending) return false;
             if(booking.Status== BookingStatus.Confirmed) return false;
             booking.Status = BookingStatus.Cancelled;
-            //return factory.BookingData().Update(booking);
             var oldStatus = booking.Status;
             booking.Status = BookingStatus.Cancelled;
 
@@ -346,7 +319,7 @@ namespace BLL.Services
             var okCar = factory.CarData().Update(car);
             if (!okCar)
             {
-                // rollback booking (best-effort)
+                
                 booking.Status = BookingStatus.Confirmed;
                 factory.BookingData().Update(booking);
 
